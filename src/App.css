@@ -34,7 +34,8 @@
     transform: rotate(360deg);
   }
 }
-
+ 
+/* Component Styles */
 .tag-btn-container {
   margin: 0px auto;
   padding: 20px;
