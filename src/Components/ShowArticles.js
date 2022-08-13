@@ -9,7 +9,7 @@ const mapStatetoProps = (state) => ({ articleInfo : state.articles})
 const mapDispatchtoProps = (dispatch) => ({ articleDispatch: (articles) => dispatch(SETARTICLE(articles))});
 
 function ShowArticles({ articleInfo, articleDispatch }) {
-   
+   //Redirecting to the article
     const articleTagClick = (tag) => { 
         axios.get(`https://dev.to/api/articles?tag=${tag}`).then( (response) => {
             articleDispatch(response.data)
