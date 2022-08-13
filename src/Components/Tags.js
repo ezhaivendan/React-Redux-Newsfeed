@@ -10,7 +10,7 @@ const mapStatetoProps = (state) => ({ tagsInfo : state.tags});
 const mapDispatchtoProps = (dispatch) => ({ articleInfo: (articles) => dispatch(SETARTICLE(articles))});
 
 function Tags({tagsInfo, articleInfo}) {
-
+    // Get Category Data from the button click
     const handleTagClick = (e) => { 
         axios.get(`https://dev.to/api/articles?tag=${e.target.value}`).then( (response) => {
             articleInfo(response.data)
