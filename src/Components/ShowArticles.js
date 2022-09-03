@@ -20,6 +20,7 @@ function ShowArticles({ articleInfo, articleDispatch }) {
         <>
         <div className="article-container">
             {
+               //Use Article Array from MapStatetoProps
                 articleInfo.map( (article, index) => 
                     <div className="article-box" key={index}>
                         <div className="author">
